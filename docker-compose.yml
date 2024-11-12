@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  rust:
+    container_name: rsbrowser
+    build: .
+    tty: true
+    volumes:
+      - .:/workspace
+    ports:
+      - 3333:3333
